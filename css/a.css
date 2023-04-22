@@ -1,0 +1,19 @@
+body {
+    background-color:#343434;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    
+    margin-right: 50px;
+    margin-left: 50px;
+    overflow: overlay;
+}
+
+
+/* video */
+
+.video-border {
+    padding: 4px;
+    background-color: #5271ff;
+    border: 1px solid #2B66FF;
+    border-radius: 4px;
+}

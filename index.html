@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<style>
+    body {
+        overflow: overlay;
+    }
+
+    ::-webkit-scrollbar {
+        width: 1px;
+        height: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: transparent;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/a.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/button.css">
+    <link rel="stylesheet" type="text/css" href="css/video.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <title>Login</title>
+
+</head>
+
+<body>
+    <header>
+        <div style="display: flex; justify-content: center;width: 100%;">
+            <img width="360" height="60" src="img/logo.png" alt="">
+        </div>
+    </header>
+
+    <main class="row marginT">
+        <div class="column width100 main-content-container">
+            <section>
+                <div class="row align-center width100 marginT">
+                    <button class="button width20 margin-left-12 margin-right-12 "onclick="mostraVideos('cachorros')">
+                        <img width=" 50px" height="45px" src="img/cara-de-cachorro (1).png" alt="Cachorro">
+                    </button>
+                    <button class="button width20 margin-left-12 margin-right-12" onclick="mostraVideos('gatos')">
+                        <img width=" 40px" height="40px" src="img/cara-de-gato.png" alt="Gato">
+                    </button>
+                    
+                </div>
+                <div class="row width100 align-center top ">
+                    <button class="button width15 margin-left-12 margin-right-12" ">
+                        <img width=" 40px" height="40px" src="img/cachorro.png" class="botao-cachorro">
+                        <img width=" 40px" height="40px" src="img/gato.png" class="botao-gato hidden">
+                    </button>
+                    <button class="button width15 margin-left-12 margin-right-12">
+                        <img width=" 40px" height="40px" src="img/brincar-com-animal-de-estimacao.png"
+                            class="botao-cachorro">
+                        <img width=" 40px" height="40px" src="img/animal.png" class="botao-gato hidden">
+                    </button>
+                    <button class="button width15 margin-left-12 margin-right-12">
+                        <img nwidth="40px" height="40px" src="img/passear-com-o-cao.png" class="botao-cachorro">
+                        <img width=" 40px" height="40px" src="img/brinque-com-animal-de-estimacao.png"
+                            class="botao-gato hidden">
+                    </button>
+                    <button class="button width15 margin-left-12 margin-right-12">
+                        <img width="40px" height="40px" src="img/cao.png" class="botao-cachorro">
+                        <!-- COLOCAR O ICON FALTANTE DE GATO -->
+                        <img width=" 40px" height="40px" src="" class="botao-gato hidden">
+                    </button>
+
+                </div>
+                <div class="row width100 ">
+                    <div class="row align-top width75 margin-6">
+                        <iframe width="680" height="415"
+                            src="https://www.youtube.com/embed/fM6pdUG91aE?autoplay=1&mute=1&modestbranding=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen class="I-cachorro">
+                        </iframe>
+
+                        <iframe width="680" height="415" src="https://www.youtube.com/embed/5nQ_POy94mw"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen class="I-gato hidden">
+                        </iframe>
+                        
+                    </div>
+                    <div class="row width25 align-center" style="flex-wrap: wrap;">
+                        <div class="row width100 align-center button-up-down">
+                            <img width="30px" height="30px" src="img/up.png">
+                        </div>
+                        <!-- style="height: 620px; overflow: hidden auto; display: flex; flex-wrap: wrap;" -->
+                        <div class="align-center">
+                            <div class="row align-center video-border video-cachorro ">
+                                <img width="180px" height="90px" src="img/cachorro1.jpg" alt="">
+                            </div>
+                            <div class="row align-center margin-6 video-cachorro ">
+                                <img width="180px" height="90px" src="img/cachorro2.jpg" alt="">
+                            </div>
+                            <div class="row align-center margin-6 video-cachorro ">
+                                <img width="180px" height="90px" src="img/cachorro3.jpg" alt="">
+                            </div>
+                            <div class="row align-center margin-6 video-cachorro ">
+                                <img width="180px" height="90px" src="img/cachorro4.jpg" alt="">
+                            </div>
+                            <!-- GATOS -->
+                            <div class="row align-center video-border video-gato hidden ">
+                                <img width="180px" height="90px" src="img/gato1.jpg" alt="">
+                            </div>
+                            <div class="row align-center margin-6 video-gato hidden">
+                                <img width="180px" height="90px" src="img/gato2.jpg" alt="">
+                            </div>
+                            <div class="row align-center margin-6 video-gato hidden">
+                                <img width="180px" height="90px" src="img/gato3.jpg" alt="">
+                            </div>
+                            <div class="row align-center margin-6 video-gato hidden">
+                                <img width="180px" height="90px" src="img/gato4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="row width100 align-center button-up-down">
+                            <img width="30px" height="30px" src="img/down.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer id="ftr">
+    </footer>
+
+    <script src="./js/index.js">
+    </script>
+</body>
+
+</html>
