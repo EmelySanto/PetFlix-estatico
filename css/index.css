@@ -2,15 +2,13 @@ body {
     background-color: #343434;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-
-
 }
 
 main {
     display: flex;
     justify-content: center;
     width: 100%;
-   
+
 }
 
 .main-content-container {
@@ -49,6 +47,7 @@ h2 {
 .align-center {
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .align-top {
@@ -69,13 +68,19 @@ h2 {
 }
 
 .width25{
-    width: 25%;
+    width: 14%;
 }
 .width20{
     width: 20%;
  }
+ .paddingLeft{
+    padding-left: 100px;
+ }
+ .paddingRight{
+    padding-right: 60px;
+ }
 .margin-6 {
-    margin: 5%;
+    margin: 1%;
     margin-top: 10px;
 }
  .top{
@@ -93,6 +98,26 @@ h2 {
 .hidden {
     display: none;
 }
+.grid-container {
+    display: grid;
+}
+.video-container {
+    position: relative;
+    
+  }
+.overlay {
+    transform: rotate(90deg);
+    position:absolute;
+    top: 43%;
+    left: 43%;
+    width: 20%;
+    height: 20%;
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    background-color: rgba(49, 48, 48, 0.998); 
+  }
+.blur {
+    filter: blur(1px);
+}
 
 ::-webkit-scrollbar {
     width: 1px;
@@ -105,4 +130,4 @@ h2 {
 
 ::-webkit-scrollbar-track {
     background: transparent;
-}
+}  
