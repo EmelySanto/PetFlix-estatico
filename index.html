@@ -44,27 +44,30 @@
         <div class="column width100 main-content-container">
             <section>
                 <div class="row align-center width100 marginT">
-                    <button id="botaoCachorro"class="button width20 margin-left-12 margin-right-12 "onclick="mostraVideos('cachorros')">
+                    <button id="botaoCachorro" class="button width20 margin-left-12 margin-right-12 borderSelectionOn"
+                        onclick="mostraVideos('cachorros')">
                         <img width=" 50px" height="45px" src="img/cara-de-cachorro (1).png" alt="Cachorro">
                     </button>
-                    <button id="botaoGato"class="button width20 margin-left-12 margin-right-12" onclick="mostraVideos('gatos')">
+                    <button id="botaoGato" class="button width20 margin-left-12 margin-right-12 borderSelectionOff"
+                        onclick="mostraVideos('gatos')">
                         <img width=" 40px" height="40px" src="img/cara-de-gato.png" alt="Gato">
                     </button>
-                    
+
                 </div>
                 <div class="row width100 align-center top ">
                     <button class="button width15 margin-left-12 margin-right-12" ">
                         <img width=" 40px" height="40px" src="img/cachorro.png" class="botao-cachorro">
-                        <img width=" 40px" height="40px" src="img/brinque-com-animal-de-estimacao.png" class="botao-gato hidden">
-                        
+                        <img width=" 40px" height="40px" src="img/brinque-com-animal-de-estimacao.png"
+                            class="botao-gato hidden">
+
                     </button>
                     <button class="button width15 margin-left-12 margin-right-12">
                         <img width=" 40px" height="40px" src="img/brincar-com-animal-de-estimacao.png"
                             class="botao-cachorro">
-                            <img width=" 40px" height="40px" src="img/gato (2).png" class="botao-gato hidden">
+                        <img width=" 40px" height="40px" src="img/gato (2).png" class="botao-gato hidden">
                     </button>
-                    <button class="button width15 margin-left-12 margin-right-12">
-                        <img nwidth="40px" height="40px" src="img/passear-com-o-cao.png" class="botao-cachorro">
+                    <button class="button width15 margin-left-12 margin-right-12 borderSelectionOn">
+                        <img width="40px" height="40px" src="img/passear-com-o-cao.png" class="botao-cachorro">
                         <img width=" 40px" height="40px" src="img/animal.png" class="botao-gato hidden">
                     </button>
                     <button class="button width15 margin-left-12 margin-right-12">
@@ -75,20 +78,31 @@
 
                 </div>
                 <div class="row width100 align-center">
-                    <div class="row align-top width75 margin-6 column" >
-                        <iframe width="1000" height="515"
-                            src="https://www.youtube.com/embed/fM6pdUG91aE?autoplay=1&mute=1&modestbranding=1"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen class="I-cachorro">
-                        </iframe>
+                    <div class=" column align-center width75 margin-6">
+                        <div>
+                            <iframe width="1000" height="515"
+                                src="https://www.youtube.com/embed/fM6pdUG91aE?autoplay=1&mute=1&modestbranding=1"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen class="I-cachorro">
+                            </iframe>
 
-                        <iframe width="1000" height="515" 
-                        src="https://www.youtube.com/embed/5nQ_POy94mw?autoplay=1&mute=1&modestbranding=1"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen class="I-gato hidden">
-                        </iframe>
+                            <iframe width="1000" height="515"
+                                src="https://www.youtube.com/embed/5nQ_POy94mw?autoplay=1&mute=1&modestbranding=1"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen class="I-gato hidden">
+                            </iframe>
+                        </div>
+
+                        <div class="views">
+                            <div>
+                                <img width=" 30px" height="30px" src="img\visualizacoes.png" alt="">
+                            </div>
+                            <div class="viewsText">
+                                350 Views
+                            </div>
+                        </div>
                     </div>
                     <div class="row width25 align-center " style="flex-wrap: wrap;">
                         <div class="row width100 align-center button-up-down">
@@ -100,7 +114,7 @@
                                 <img width="180px" height="90px" src="img/cachorro1.jpg " alt="" class="blur">
                                 <div class="overlay "></div>
                             </div>
-                            <div class="row align-center margin-6 video-cachorro video-container" >
+                            <div class="row align-center margin-6 video-cachorro video-container">
                                 <img width="180px" height="90px" src="img/cachorro2.jpg" alt="" class="blur">
                                 <div class="overlay "></div>
                             </div>
@@ -132,7 +146,6 @@
                         </div>
                         <div class="row width100 align-center button-up-down video-container">
                             <img width="30px" height="30px" src="img/down.png" alt="">
-                            <div class="overlay "></div>
                         </div>
                     </div>
                 </div>

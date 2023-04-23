@@ -1,4 +1,5 @@
 function mostraVideos(tipo) {
+    highlightSelectedButton(tipo);
     let videosGato = document.getElementsByClassName('video-gato');
     for (const video of videosGato) {
         console.log(videosGato)
@@ -31,3 +32,24 @@ function mostraVideos(tipo) {
         tipo === 'gatos' ? img.classList.remove('hidden') : img.classList.add('hidden');
     }
 };
+function highlightSelectedButton(tipo){
+    let botaoGato = document.getElementById("botaoGato");
+    let botaoCachorro = document.getElementById("botaoCachorro");
+
+    if (tipo === 'gatos'){
+        botaoCachorro.className = botaoCachorro.className.replace(/(?:^|\s)borderSelectionOn(?!\S)/g, '');
+        botaoGato.className += ' borderSelectionOn';
+        botaoGato.className = botaoGato.className.replace(/(?:^|\s)borderSelectionOff(?!\S)/g, '');
+        if (!botaoCachorro.className.includes('borderSelectionOff')) {
+            botaoCachorro.className += ' borderSelectionOff';
+        }
+
+    } else if (tipo === 'cachorros'){
+        botaoGato.className = botaoGato.className.replace(/(?:^|\s)borderSelectionOn(?!\S)/g, '');
+        botaoCachorro.className += ' borderSelectionOn';
+        botaoCachorro.className = botaoCachorro.className.replace(/(?:^|\s)borderSelectionOff(?!\S)/g, '');
+        if (!botaoGato.className.includes('borderSelectionOff')) {
+            botaoGato.className += ' borderSelectionOff';
+        }
+    }
+}
